@@ -136,6 +136,20 @@
   line-height: 80px;
   letter-spacing: 0.2px;
 }
+.product_main_text_grad{
+  background: var(--background-gradient, linear-gradient(28deg, #00F3B9 0%, #2187FF 100%));
+  background-clip:  text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* H1 */
+  font-family: 'Montserrat',sans-serif;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
 .product_description{
   display: flex;
   padding: 10px;
@@ -143,9 +157,8 @@
   gap: 10px;
   width: 708px;
   height: 76px;
-
 }
-.product_description_main{
+.product_description_text{
   color: var(--second-text, #737373);
   text-align: center;
   /* H4 */
@@ -289,7 +302,6 @@
 
 /*LIGHT 5*/
 .light5{
-  margin: auto;
   display: flex;
   width: 1440px;
   padding: 150px 82px;
@@ -379,7 +391,6 @@
 
 /*LIGHT 7*/
 .light7{
-  margin: auto;
   display: flex;
   width: 1440px;
   padding: 150px 82px;
@@ -387,6 +398,7 @@
   align-items: flex-start;
   gap: 10px;
   background: #FFF;
+  float: right;
 }
 .light7_content{
   display: flex;
@@ -403,7 +415,7 @@
 }
 .l7_frame19_content{
   display: flex;
-  width: 505px;
+  width: 535px;
   height: 261px;
   flex-direction: column;
   align-items: flex-start;
@@ -457,13 +469,17 @@
   letter-spacing: 0.2px;
 }
 .l7_frame18{
-  display: flex;
+  display: inline-flex;
   padding: 10px;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  background-color: red;
 }
 .l7_frame18_mac{
+  position: relative;
+  margin-left: auto;
+  right: 0;
   width: 820.204px;
   height: 458.612px;
 }
